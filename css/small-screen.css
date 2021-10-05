@@ -1,0 +1,91 @@
+	@charset "UTF-8";
+/* CSS Document */
+ 
+h1 {
+  font-size: 32px; margin: 0 0 50px 0; text-align: left;
+}
+h2 {
+  font-size: 22px;
+}
+.box-top {
+  height: 350px;
+  padding: 15px 40px;
+}
+.box-top h2 {
+  padding: 10px 0;
+  font-size: 15px;
+}
+.topo-bg{
+  height: 280px; 
+}
+.topo{
+  background-image:url("../img/bg-topo-sm.jpeg");
+  padding: 60px 0 45px 0;
+}
+.box-profile, .box-info{
+  padding: 35px;
+}
+.background-roxo {
+  padding: 80px 0;
+}
+.titulo-topo {
+  font-size: 21px;
+  line-height: 23px;
+}
+.contato-interna{
+  background-size:cover;
+}
+.contato-form{
+  right: 60px;
+  padding: 30px 0 20px 50px;
+}
+.background-branco {
+  background-color: #FFF;
+  padding: 60px 0;
+}
+.texto-horizontal {
+  margin-top: -195px;
+}
+.bg-info {
+  margin-top: 30px;
+}
+.rodape{
+  text-align: center;
+  padding-top: 0;
+}
+.justify-sm {
+  justify-content: left!important;
+}
+
+@media only screen and (max-width: 550px) {
+.marca-topo {
+  padding-bottom: 0px;
+}
+.titulo-topo {
+  font-size: 19px;
+}
+.sub-titulo-topo {
+  font-size: 13px;
+  padding-top: 6px;
+  line-height: 15px;
+}
+.conteudo-topo a, .conteudo-videos a {
+  font-size: 9px;
+  padding-top: 2px;
+}
+.navbar-brand{
+  width: 220px;
+}
+.margin-off {
+  margin-bottom: 60px;
+
+}
+
+@media only screen and (max-width: 500px) {
+.topo {
+  padding: 35px 0 30px 0;
+}
+.titulo-topo {
+  font-size: 17px;
+}
+

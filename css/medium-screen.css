@@ -1,0 +1,121 @@
+	@charset "UTF-8";
+/* CSS Document */
+h1 {  font-size: 35px; margin: 0 0 80px 0; display: block; }
+p{ font-size: 17px; margin: 15px 0; line-height: 22px } 
+
+/* Boostrap Navbar Alterações */
+.navbar{
+  padding: 20px;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
+  font-size: 12px; 
+}
+.navbar-dark .navbar-toggler {
+  border-color: #bbb;
+}
+.nav-btn {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.social-media-nav {
+  padding: 25px;
+  text-align: center;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: 12px!important;
+  font-size: 12px;
+  text-align: center;
+}
+.dropdown-menu {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  background-color: #222;
+}
+.dropdown-item {
+    font-size: 12px;
+}
+.dropdown-menu a{
+  padding: 15px 0;
+}
+.dropdown-menu a:hover{
+  padding: 15px 0;
+}
+.dropdown-divider{
+  display: inline-block;
+}
+/* Fim Boostrap Navbar Alterações */
+.topo-bg{
+  background-image:url("../img/topo-bg-sm.jpeg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height: 630px; 
+}
+.box-top {
+  height: 630px;
+  padding: 60px 120px;
+}
+.topo{
+  padding: 40px 0 4px 0;
+  margin-top: 0;
+}
+.marca-topo{
+  font-size: 9px;
+  padding-bottom: 6px;
+}
+.spacing-3 {
+  margin-top: 30px;
+}
+.parceiros {
+  margin-top: 35px;
+}
+.obras{
+  margin-top: 35px;
+}
+.conteudo-topo a, .conteudo-videos a{
+  font-size: 11px;
+  padding-top: 10px;
+}
+.background-branco {
+  padding: 80px 0;
+}
+.carousel-indicators{
+  display: none;
+}
+.show-off-small-screen{
+  display: none;
+}
+.show-on-small-screen{
+  display: inline-block;
+}
+.apresentacao img{
+  margin-top:0;
+}
+.margin-off {
+    margin-bottom: 90px;
+}
+.clientes-thumb{
+  margin-top: 20px;
+}
+.clientes img{
+  margin-bottom: 20px;
+}
+.endereco{
+ margin-top: 30px;
+}
+.rodape-texto{
+  margin: 20px 0;
+}
+.justify-sm {
+  justify-content: left!important;
+}
+.box-info, .box-profile {
+  min-height: 250px;
+}
+.background-roxo {
+  padding: 10px 0 80px 0;
+}
+.rodape h3{
+  margin-top: 70px;
+}

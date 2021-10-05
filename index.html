@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang=”pt-BR” dir=”ltr”>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portal de Conhecimento</title>
+        
+        <!-- Bootstrap  4.1.0 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="css/extra-large-screen.css" rel="stylesheet">
+        <link href="css/large-screen.css" rel="stylesheet" media="screen and (max-width: 992px)" />
+        <link href="css/medium-screen.css" rel="stylesheet" media="screen and (max-width: 768px)" />
+        <link href="css/small-screen.css" rel="stylesheet" media="screen and (max-width: 576px)" />
+        
+        <!-- Google Font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+        </style>
+    <body>
+        <!-- Topo -->
+        <div class="topo-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-10 offset-xl-2 offset-md-2 offset-1">
+                        <div class="box-top">
+                            <img src="img/logo_dcc_1.png" class="img-fluid mx-auto d-block">
+                            <h2>Bem-vindo(a), qual seu nome?</h2>
+                            <input type="text" name="nomeUser" id="nomeUser" class="form-control">
+                            <button class="btn-dark btn-block spacing-3" id="confirmarNome">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+        <!-- Fim Topo --> 
+
+                    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+        <!-- Slider Parceiros -->
+
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/slick-variable-slider.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+      
+        <!-- Fim Slider Parceiros -->
+        
+        <!-- Anime -->
+        <script>
+                    var root = document.documentElement;
+        root.className += ' js';
+
+        function boxTop(idBox) {
+          var boxOffset = $(idBox).offset().top;
+          return boxOffset;
+        }
+
+        $(document).ready(function() {
+          var $target = $('.anime'),
+              animationClass = 'anime-init',
+              windowHeight = $(window).height(),
+              offset = windowHeight - (windowHeight / 4);
+
+          function animeScroll() {
+            var documentTop = $(document).scrollTop();
+            $target.each(function() {
+              if (documentTop > boxTop(this) - offset) {
+                $(this).addClass(animationClass);
+              }
+            });
+          }
+          animeScroll();
+
+          $(document).scroll(function() {
+            animeScroll();
+          });
+        });
+        </script>  
+        <!-- Fim Anime -->   
+
+    </body>
+
+
+</html>        

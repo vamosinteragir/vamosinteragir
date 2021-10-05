@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html lang=”pt-BR” dir=”ltr”>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Digital Nomands Salvador</title>
+        
+        <!-- Bootstrap  4.1.0 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="css/extra-large-screen.css" rel="stylesheet">
+        <link href="css/large-screen.css" rel="stylesheet" media="screen and (max-width: 992px)" />
+        <link href="css/medium-screen.css" rel="stylesheet" media="screen and (max-width: 768px)" />
+        <link href="css/small-screen.css" rel="stylesheet" media="screen and (max-width: 576px)" />
+        
+        <!-- Google Font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+        </style>
+    <body>
+
+       
+        
+        <!-- Apresentação --> 
+        <section class="background-branco apresentacao scroll">
+            <div class="container-fluid">
+               
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-5 col-10 offset-1 anime">
+                        <h1>Sobre o que você deseja saber mais?</h1> 
+                    </div>
+                </div>
+                <div class="row anime">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 offset-xl-2 offset-lg-2 offset-md-0">
+                        <button type="button" class="btn-dark btn-block spacing-3" id="btn-Co-Design">Co-Design</button>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 offset-xl-2 offset-lg-2 offset-md-0">
+                        <button type="button" class="btn-dark btn-block spacing-3" id="btn-Dparticipativo">Design participativo</button>
+                    </div>
+                    
+                    
+                </div>  
+                <div class="row spacing-3" id="Co-Design">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-10 offset-1 anime">
+                        <h3>Co-Design</h3>
+                        <p>AQUI ESCREVO SOBRE CO-DESIGN</p>
+                    </div> 
+                </div>
+                <div class="row spacing-3" id="Dparticipativo">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-10 offset-1 anime">
+                        <h3>Design participativo</h3>
+                        <p>AQUI ESCREVO SOBRE Design participativo</p>
+                    </div> 
+                </div>     
+            </div>
+        </section>
+        <!-- Fim Apresentação -->
+
+        <!-- Rodapé -->
+         <!-- Rodapé -->
+         <section class="background-roxo rodape">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-10 offset-xl-1 offset-lg-1 offset-md-1 offset-1 text-center">
+                        <h3>Apoio:</h3>
+                        <img src="img/UFBA.png" class="img-fluid mx-auto d-block" style="height: 130px;">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-10 offset-xl-0 offset-lg-0 offset-md-0 offset-1 text-center">
+                        <h3>Realização:</h3>
+                        <img src="img/logo_dcc_1.png" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- Fim Rodapé -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+        <!-- Slider Parceiros -->
+
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/slick-variable-slider.js"></script>
+      
+        <!-- Fim Slider Parceiros -->
+        
+        <!-- Anime -->
+        <script>
+                    var root = document.documentElement;
+        root.className += ' js';
+
+        function boxTop(idBox) {
+          var boxOffset = $(idBox).offset().top;
+          return boxOffset;
+        }
+
+        $(document).ready(function() {
+        $(window).scrollTop($('.scroll').offset().top);
+          var $target = $('.anime'),
+              animationClass = 'anime-init',
+              windowHeight = $(window).height(),
+              offset = windowHeight - (windowHeight / 4);
+
+          function animeScroll() {
+            var documentTop = $(document).scrollTop();
+            $target.each(function() {
+              if (documentTop > boxTop(this) - offset) {
+                $(this).addClass(animationClass);
+              }
+            });
+          }
+          animeScroll();
+
+          $(document).scroll(function() {
+            animeScroll();
+          });
+        });
+        </script>  
+        <!-- Fim Anime -->   
+
+    </body>
+
+
+</html>        

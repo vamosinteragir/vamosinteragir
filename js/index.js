@@ -8,29 +8,37 @@ $('#confirmarNome').click(function () {
 
 })
 
-$('#Co-Design').hide();
-$('#Dparticipativo').hide();
 
 
-$('#btn-Co-Design').click(function () {
-    $("#Dparticipativo").hide();
-    $("#Co-Design").fadeIn(1000);
 
 
-})
-
-$('#btn-Dparticipativo').click(function () {
-    $("#Co-Design").hide();
-    $("#Dparticipativo").fadeIn(1000);
-
-
-})
 
 $(document).ready(function () {
     $('button.btn').click(function () {
         $("div.elementToFadeInAndOut").hide();
         $("div.elementToFadeInAndOut").fadeIn(1000);
     });
+
+    $('#oQueE').hide();
+    $('#surgimento').hide();
+    $('#funcionamento').hide();
+    $('#importancia').hide();
+    $('#objetivo').hide();
+    $('#essencia').hide();
+
+
+
+    $('.botaoInfos').click(function () {
+        var id = this.id;
+        id  = id.replace('btn-', '')
+        $(".text-div").hide();
+        $("#"+id).fadeIn(1000);
+
+
+    })
+
+
+
 });
 
 
